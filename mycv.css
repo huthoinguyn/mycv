@@ -107,6 +107,7 @@ body {
   text-align: justify;
 }
 #content .profile .left .media {
+  width: 60%;
   margin-top: 24px;
   display: flex;
   justify-content: space-around;
