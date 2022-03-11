@@ -156,6 +156,7 @@ body {
   object-fit: cover;
   overflow: hidden;
   border-radius: 9px;
+  filter: drop-shadow(2px 4px 8px #333);
 }
 #content .ecommerce-page .right {
   width: 35%;
@@ -211,6 +212,8 @@ body {
   object-fit: cover;
   overflow: hidden;
   border-radius: 9px;
+  filter: drop-shadow(2px 4px 8px #333);
+
 }
 #content .landing-page .left {
   width: 35%;
