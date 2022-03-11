@@ -1,0 +1,314 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+$first: #e9c46a;
+$second: #264653;
+$third: #588157;
+// $third: #2a9d8f;
+$fourth: #7b2cbf;
+$button-color: linear-gradient(to top, #f72585, #560bad);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#slider {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $first;
+  // position: relative;
+  color: $third;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .name {
+    font-size: 64px;
+  }
+  .desc {
+    font-size: 36px;
+  }
+}
+#content {
+  width: 100%;
+  min-height: 100vh;
+  // background-color: $third;
+  // display: flex;
+  // justify-content: space-around;
+  .profile {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: space-around;
+    .left,
+    .right {
+      width: calc(40% - 16px);
+      padding: 36px;
+    }
+    .left {
+      display: flex;
+      //   align-items:center;
+      justify-content: center;
+      flex-direction: column;
+      .title {
+        color: #fff;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        span {
+          // font-size: px;
+          background: -webkit-linear-gradient(#f72585, #560bad);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .desc {
+        margin-top: 36px;
+        color: #fff;
+        text-align: justify;
+      }
+      .media{
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+          text-decoration: none;
+          // color: #fff;
+          font-size: 48px;
+          // width: 32px;
+          // height: 32px;
+          border-radius: 12px;
+          background: -webkit-linear-gradient(#5a189a, #9d4edd);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .my-image {
+        width: 80%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 9px;
+      }
+    }
+  }
+  .ecommerce-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $third;
+    // width: 100%;
+    // min-height: 100vh;
+    // background-color: $second;
+    display: flex;
+    justify-content: space-around;
+    .left,
+    .right {
+      width: calc(40% - 16px);
+      padding: 36px;
+    }
+    .left {
+      display: flex;
+      //   align-items:center;
+      justify-content: center;
+      flex-direction: column;
+      .ecommerce-image {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 9px;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        // width: 100%;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 48px;
+      }.view{
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        a{
+          text-align: center;
+          min-width: 120px;
+          text-decoration: none;
+          color: #fff;
+          padding: 12px 24px;
+          border-radius: 12px;
+          background-image: $button-color;
+          cursor: pointer;
+          margin: 12px;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .landing-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $fourth;
+    display: flex;
+    justify-content: space-around;
+    .left,
+    .right {
+      width: calc(40% - 16px);
+      padding: 36px;
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .landing-image {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 9px;
+      }
+    }
+    .left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        // width: 100%;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 48px;
+      }.view{
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        a{
+          text-align: center;
+          min-width: 120px;
+          text-decoration: none;
+          color: #fff;
+          padding: 12px 24px;
+          border-radius: 12px;
+          background-image: $button-color;
+          cursor: pointer;
+          margin: 12px;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 687px) {
+  #slider{
+    min-height: 700px;
+    .name{
+      font-size: 42px;
+    }
+    .desc{
+      font-size: 32px;
+    }
+  }
+  #content{
+    width: 100%;
+    padding: 12px;
+    .profile{
+      width: 100%;
+      flex-wrap: wrap;
+      min-height: fit-content;
+      .left,
+      .right{
+        width: 100%;
+      }
+      .right{
+        width: 100%;
+        .my-image{
+          width: 100%;
+        }
+      }
+    }
+    .ecommerce-page{
+      width: 100%;
+      flex-wrap: wrap;
+      min-height: fit-content;
+      .left,
+      .right{
+        width: 100%;
+      }
+      .right{
+        h3{
+          margin-top: 0;
+          font-size: 32px;
+        }
+        .view{
+          margin-top: 0;
+          flex-wrap: wrap;
+          a{
+            width: 100%;
+          }
+        }
+      }
+      .left{
+        width: 100%;
+        .ecommerce-image{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

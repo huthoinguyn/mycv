@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#header {
+  position: relative;
+}
+#header .header__info {
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+#header .header__info .header__title {
+  font-size: 56px;
+  font-weight: 700;
+}
+#header .header__info .desc {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#content {
+  background-color: #e9d8a6;
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#content .category {
+  padding-top: 24px;
+  font-size: 14px;
+  color: #ca6702;
+  text-transform: lowercase;
+}
+#content .title {
+  color: #ca6702;
+  text-transform: capitalize;
+  font-size: 48px;
+  position: relative;
+}
+#content .title::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ca6702;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#content .title::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #0a9396;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#content .container {
+  width: 100%;
+  display: flex;
+}
+#content .container .content__left,
+#content .container .content__right {
+  width: 50%;
+  display: flex;
+  margin: 48px;
+}
+#content .container .content__left {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#content .container .content__left input,
+#content .container .content__left textarea {
+  background-color: #e9d8a6;
+  border-radius: 4px;
+  outline: none;
+  border: 0.5px solid #219ebc;
+}
+#content .container .content__left input:focus,
+#content .container .content__left textarea:focus {
+  border: 2px solid #219ebc;
+  color: #219ebc;
+}
+#content .container .content__left .form__name,
+#content .container .content__left .form__email {
+  width: calc(50% - 24px);
+  margin: 12px;
+  padding: 9px 12px;
+}
+#content .container .content__left .form__message {
+  width: calc(100% - 24px);
+  padding: 12px;
+}
+#content .container .content__left .form__submit {
+  width: calc(100% - 24px);
+  background-color: #0a9396;
+  padding: 9px 12px;
+  border: none;
+  color: #ca6702;
+  margin-top: 16px;
+}
+#content .container .content__right {
+  flex-direction: column;
+  justify-content: space-around;
+}
+#content .container .content__right .item {
+  color: #ca6702;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#content .container .content__right .item__icon {
+  margin-left: 56px;
+  width: 64px;
+  height: 64px;
+  background-color: #0a9396;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .container .content__right .item__icon .icon {
+  font-size: 24px;
+}
+#content .container .content__right .item__info {
+  margin-left: 16px;
+}
+#content .container .content__right .item__title {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=lienhe.css.map */

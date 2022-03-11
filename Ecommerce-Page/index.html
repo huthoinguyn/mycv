@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header__left">
+          <div class="nav__icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="header__logo">sneakers</div>
+          <ul class="nav">
+            <i class="fas fa-times close__icon"></i>
+            <li class="nav__item"><a href=""> Collections </a></li>
+            <li class="nav__item"><a href=""> Men </a></li>
+            <li class="nav__item"><a href=""> Women </a></li>
+            <li class="nav__item"><a href=""> About </a></li>
+            <li class="nav__item"><a href=""> Contact </a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <p class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </p>
+          <div class="profile">
+            <img src="./img/IMG_8387.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="content__left">
+          <div class="product">
+            <img class="product__img" src="./img/image-product-1.jpg" alt="" />
+          </div>
+          <div class="product__thumbnail">
+            <div class="image">
+              <img
+                class="img"
+                src="./img/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <div class="blur__img"></div>
+            </div>
+            <div class="image">
+              <img
+                class="img"
+                src="./img/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+              <div class="blur__img"></div>
+            </div>
+            <div class="image">
+              <img
+                class="img"
+                src="./img/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+              <div class="blur__img"></div>
+            </div>
+            <div class="image">
+              <img
+                class="img"
+                src="./img/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+              <div class="blur__img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content__right">
+          <p class="name">sneaker company</p>
+          <h3 class="title">Fall limited edition sneakers</h3>
+          <p class="desc">
+            These low-profile sneakers are you perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <p>$125.00</p>
+            <span>50%</span>
+          </div>
+          <div class="sale">
+            <del>$250.00</del>
+          </div>
+          <div class="addtocart">
+            <div class="counter">
+              <button class="counter-descrease">
+                <i class="fa fa-minus"></i>
+              </button>
+              <h1 class="counter-number">0</h1>
+              <button class="counter-increase">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+            <div class="add">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

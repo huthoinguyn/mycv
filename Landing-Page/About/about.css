@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+#header {
+  position: relative;
+}
+#header .header__info {
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+#header .header__info .header__title {
+  font-size: 56px;
+  font-weight: 700;
+}
+#header .header__info .desc {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .header__place {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #ccc;
+  font-size: 18px;
+}
+#header .header__place .place__icon {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+#content .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .container .section {
+  width: 30%;
+  margin: 12px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#content .container .section__title {
+  font-family: sans-serif;
+}
+#content .container .section .desc {
+  text-align: center;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("../img/landscape.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 800px;
+}
+#contact .contact__title {
+  color: #fff;
+  width: 800px;
+  font-family: sans-serif;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#contact .form {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  min-height: 400px;
+}
+#contact .form .input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+/*# sourceMappingURL=about.css.map */
